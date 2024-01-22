@@ -115,7 +115,10 @@ async getAllMessagesByUserId(userId: number, page: number = 1, pagesize: number 
 }
 
 
-
+// get all contacts
+async getAllMessage(): Promise< Message[]> {
+  return await Message.findAll();
+}
 
 
 

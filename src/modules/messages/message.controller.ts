@@ -50,4 +50,12 @@ async getAllMessagesByUserId(
   }
 }
 
+// get all messages
+@Get()
+async getAllContacts(): Promise<Message[]> {
+  return await this.messageService.getAllMessage();
+}
+
+
+
 }
